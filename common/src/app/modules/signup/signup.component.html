@@ -1,0 +1,11 @@
+<form action="#" name="signup">
+  <div id="node"><h1>Signup</h1>
+  User Name : <input type="text"  class="input" [(ngModel)]="name" required name="name"/><br><br>
+  Password : <input type="password"  class="input" [(ngModel)]="password" required name="password"/><br><br>
+  <div id="em" *ngIf="false">User Email :<input  type="text"  class="input"  [(ngModel)]="email" required name="email"/></div>
+  <div id="mb" *ngIf="true">Mobile :<input  type="number"  class="input"    [(ngModel)]="mobile" required name="mobile"/></div>
+  <button class="submit" ><a  (click)="signup()">Submit</a></button>
+  </div>
+</form>
+
+
